@@ -1,0 +1,62 @@
+contador = 1
+while contador <= 10:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 11
+while contador <= 20:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 21
+while contador <= 30:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 31
+while contador <= 40:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 41
+while contador <= 50:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 51
+while contador <= 60:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 61
+while contador <= 70:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 71
+while contador <= 80:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10!:)')
+    contador = 81
+while contador <= 90:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10')
+contador = 91
+while contador <= 100:
+    print(contador)
+    contador += 1
+else:
+    print('MULTIPLO DE 10')
+
+   
