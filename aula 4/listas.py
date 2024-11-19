@@ -36,5 +36,3 @@ print(lista[1]) #imprime banana
 lista.remove('bebida') #remove o item da lista
 print(lista)
 
-lista.clear() #limpa a lista
-print(lista)
