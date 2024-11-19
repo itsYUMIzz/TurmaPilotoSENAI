@@ -2,26 +2,26 @@
 #a)  Crie um programa que solicite ao usuário que insira 4 números.
 #b)  Identifique e imprima o maior e o menor número da lista inserida.
 
-n1 = float(input("DIGITE UM NUMERO: "))
-n2 = float(input("DIGITE UM NUMERO: "))
-n3 = float(input("DIGITE UM NUMERO: "))
-n4 = float(input("DIGITE UM NUMERO: "))
+num1 = float(input("DIGITE UM NUMERO: "))
+num2 = float(input("DIGITE UM NUMERO: "))
+num3 = float(input("DIGITE UM NUMERO: "))
+num4 = float(input("DIGITE UM NUMERO: "))
 
-maior = n1
-if n2 > maior:
-    maior = n2
-if n3 > maior:
-    maior = n3
-if n4 > maior:
-    maior = n4
+maior = num1
+if num2 > maior:
+    maior = num2
+if num3 > maior:
+    maior = num3
+if num4 > maior:
+    maior = num4
 
-menor = n1
-if n2 < menor:
-    menor = n2
-if n3 < menor:
-    menor = n3
-if n4 < menor:
-    menor = n4
+menor = num1
+if num2 < menor:
+    menor = num2
+if num3 < menor:
+    menor = num3
+if num4 < menor:
+    menor = num4
 
 print("O MAIOR NUMERO É: ",maior)
 print("O MENOR NUMERO É: ",menor)

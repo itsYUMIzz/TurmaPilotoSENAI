@@ -14,3 +14,12 @@ alunospt1.append('joao') #adicionar no final
 
 for nome in alunospt1 :
     print(f'- {nome} \n ʕ•́ᴥ•̀ʔ')
+
+
+
+
+
+
+
+
+    

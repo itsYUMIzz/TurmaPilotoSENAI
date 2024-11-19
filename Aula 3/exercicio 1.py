@@ -15,8 +15,8 @@ while condicao:
 
 contador = 0
 
-while contador  <= 10:
-    contador += 10
+while contador  <= 100:
+    contador += 1
     if contador == 5:
         print("NAO VOU MOSTRAR O 5!")
         continue

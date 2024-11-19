@@ -25,6 +25,16 @@ print(type(1.5)) #float (numero real) ex 1.5 -1.4
 print(type('oi')) #str (caractere) ex "oi" "opa"
 print(type(True)) #bool (logico) ex true false
 
-#variavel
+# variavel
+# 1 - caracteres especiais
+# 2 - espaços vazios
+# camelCase = umExemplo
+#snakeCase = um_exemplo
+# 3 - evitar numeros solos , ou começo de variavel
+# *4 - evite nomes poucos descritiveis
+
+# variaveis maiusculos sao constantes
+#constante nao pode ter seu valor mudado
+TESTE = 1
 teste = 'TESTE'
 print(teste,teste,teste)
