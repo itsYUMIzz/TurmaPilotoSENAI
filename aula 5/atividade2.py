@@ -1,8 +1,6 @@
-#2) Crie uma função fala se um número é par ou ímpar. Retorne se o número é par ou ímpar.
-
-def par_impar(n):
+def par_impar(koala):
     
-    if n % 2 == 0:
+    if koala % 2 == 0:
         print("par ʕ•́ᴥ•̀ʔ")
     else:
         print("impar ʕ•́ᴥ•̀ʔ")
