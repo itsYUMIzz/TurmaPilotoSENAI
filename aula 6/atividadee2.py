@@ -1,14 +1,11 @@
 listada_agenda = {}
 
 while True:
-
     print("\nAGENDA DE CONTATOS")
     print("1 - ADICIONAR NOVOS CONTATOS")
     print("2 - EXIBIR TODOS OS CONTATOR ")
     print("3 - FINALIZAR")
-
     opcao = input("DIGITE A OPÇÃO DESEJADA: ")
-
     if opcao == "1":
         nome = input("DIGITE O NPME DO CONTATO: ")
         telefone = input("DIGITE O TELEFONE DO CONTATO: ")
