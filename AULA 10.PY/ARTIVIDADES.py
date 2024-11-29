@@ -15,9 +15,6 @@ except KeyError:
     print("CHAVE NÃO ENCONTRADA")
     print("CHAVES DISPONÍVEIS:", ", ".join(aluno.keys()))        
         
-finally:
-   print("CONTEUDO DO DICIONARIO:", aluno)
-print("FIM DO PROGRAMA")
 
 
 
