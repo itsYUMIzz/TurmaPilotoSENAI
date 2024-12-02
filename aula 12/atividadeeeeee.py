@@ -29,5 +29,5 @@ total_acucar = acucar * 5
 total_ovo = ovo * 5
 
 print(f'Total de farinha: {total_farinha}g')
-print(f'Total de acúcar: {total_acucar}g')
+print(f'Total de acucar: {total_acucar}g')
 print(f'Total de ovos: {total_ovo}')
