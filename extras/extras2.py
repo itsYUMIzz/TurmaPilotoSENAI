@@ -16,3 +16,6 @@ elif dia == 6:
     print("SEXTA")
 elif dia == 7:
     print("SÁBADO")
+
+
+    
