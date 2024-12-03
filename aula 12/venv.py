@@ -20,4 +20,7 @@ deactivate
 ativar
 .\venv\Scripts\activate
 
+criar requirements
+pip freeze > requirements.txt
+
 '''
