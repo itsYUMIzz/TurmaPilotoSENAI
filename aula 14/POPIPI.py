@@ -13,6 +13,9 @@ arquivo = 'main.txt'
 #modulo 2
 
 with open(arquivo, 'w+') as leitura:
+    #write escreve uma linha
+    #writelines escreve varias linhas
+    #seakeek (mover o cursor)
     leitura.write(' BOM DIA! \n')
     leitura.write('linha 2 \n')
     leitura.writelines(['linha 3 \n', 'linha 4 \n'])

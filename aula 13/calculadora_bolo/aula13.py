@@ -25,4 +25,4 @@ print(f"Farinha: {farinha}g")
 print(f"Áçucar: {acucar}g")
 print(f"Ovos: {ovos}g")
 
-5 11 3 8
+

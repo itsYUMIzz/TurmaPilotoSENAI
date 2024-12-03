@@ -38,13 +38,5 @@ while True:
     if continua.lower() != "s":
         break
 
-# TODO: Implementar mecanismo de recuperar senha caso o usuário esqueça sua senha
-# TODO: Implementar mecanismo de trocar senha caso o usuário deseje
-# TODO: Implementar mecanismo de bloqueio de conta caso o usuário tente fazer login com muitas tentativas erradas
-
-# Para testar:
-cadastro()
-login()
-
 
 
