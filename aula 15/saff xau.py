@@ -25,10 +25,10 @@ class carro:
 
 
 motorista = motorista("Bruno")
-carro = carro("Fiat", "ABC1234", 1000, "preto", motorista.nome)
+carro = carro("Ferrari", "ABC1234", 1000, "Branco", motorista.nome)
 
-carro.acelerar(30)
-carro.adicionar_ao_porta_malas("Corpo")
+carro.acelerar(120)
+carro.adicionar_ao_porta_malas("Cadaver")
 carro.mostrar_porta_malas()
 
 print(f"Motorista: {motorista.nome}")
