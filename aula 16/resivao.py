@@ -2,38 +2,34 @@
 # notas (uma lista) e métodos para calcular a média e verificar se o aluno foi aprovado (média >= 7). 
 # Todo aluno criado deverá ser adicionado a um Json
 
+import json
+
 class Aluno:
     def __init__(self, nome, notas):
         self.nome = nome
         self.notas = notas
 
-    def calcular_media(self):
+    def media(self):
         return sum(self.notas) / len(self.notas)
 
-    def verificar_aprovado(self):
-        media = self.calcular_media()
-        return media >= 7
+    def aprovado(self):
+        return self.media() >= 7
 
     def __str__(self):
-        return f"Aluno: {self.nome}, Notas: {self.notas}, Média: {self.calcular_media()}, Aprovado: {self.verificar_aprovado()}"
+        return f"Aluno: {self.nome}, Notas: {self.notas}, Media: {self.media()}, Aprovado: {self.aprovado()}"
 
 aluno1 = Aluno("Bruno", [8, 9, 7])
 print(aluno1)
 
-aluno2 = Aluno("Karyna", [6, 7, 8])
-print(aluno2)
+with open("alunos.json", "w") as arquivo:
+    json.dump(aluno1.__dict__, arquivo)
 
-aluno3 = Aluno("Ketley", [5, 6, 7])
-print(aluno3)
+with open("alunos.json", "r") as arquivo:
+    dados = json.load(arquivo)
+    aluno2 = Aluno(dados["nome"], dados["notas"])
+    print(aluno2)
 
-alunos = [aluno1, aluno2, aluno3]
-
-with open({alunos.json}, "w") as arquivo:
-    for aluno in alunos:
-        "json.dumps"(aluno.__dict__, arquivo)
-        arquivo.write("\n")
-
-with open({alunos.json}, "r") as arquivo:
-    for linha in arquivo:
-        aluno = ("json.loads"(linha))
-        print(Aluno(**aluno))
+    if aluno2.aprovado():
+        print("APROVADO")
+    else:
+        print("REPROVADO")
