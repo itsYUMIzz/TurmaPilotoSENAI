@@ -36,9 +36,14 @@ cardapio = Cardapio()
 cardapio.adicionar_item(ItemPedido("X-Burguer", 10.99))
 cardapio.adicionar_item(ItemPedido("X-Salada", 12.99))
 cardapio.adicionar_item(ItemPedido("X-Bacon", 13.99))
+cardapio.adicionar_item(ItemPedido("X-Tudo", 15.99))
+
+
 
 pedido = Pedido(1)
 pedido.adicionar_item(cardapio.buscar_item("X-Burguer"))
-pedido.adicionar_item(cardapio.buscar_item("X-Salada"))
+pedido.adicionar_item(cardapio.buscar_item("X-Bacon"))
+pedido.adicionar_item(cardapio.buscar_item("X-Tudo"))
+
 
 print("Total do pedido:", pedido.calcular_total())

@@ -17,7 +17,7 @@ class Estoque:
         self.produtos.append(produto)
 
     def remover_produto(self, produto):
-        self.remover_produtos.remove(produto)
+        self.produtos.remove(produto)
 
     def verificar_produto(self, produto):
         return produto in self.produtos
