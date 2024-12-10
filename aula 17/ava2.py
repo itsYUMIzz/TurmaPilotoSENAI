@@ -6,35 +6,41 @@
 #Verificar se um produto está disponível (quantidade maior que 0).
 #Continuar exibindo o menu até que o usuário escolha sair.
 
-
 estoque = {}
 
 while True:
-    print("1 - Adicionar um novo produto ao estoque.")
-    print("2 - Atualizar a quantidade de um produto existente.")
-    print("3 - Verificar se um produto está disponível (quantidade maior que 0).")
-    print("4 - Sair.")
-
-    opcao = input("Escolha uma opção: ")
+    print("\nMENU:")
+    print("\n✨BEM VINDO AO SISTEMA DE CONTROLE DE ESTOQUE✨")
+    print("1 - ADICIONAR UM NOVO PRODUTO AO ESTOQUE")
+    print("2 - ATUALIZAR A QUANTIDADE DE UM PRODUTO EXISTENTE")
+    print("3 - VERFICAR SE UM PRODUTO ESTÁ DISPONIVEL (quantidade maior que 0)")
+    print("4 - SAIR")
+    opcao = input("DIGITE A OPÇÃO DESEJADA: ")
 
     if opcao == "1":
-        produto = input("Digite o nome do produto: ")
-        quantidade = int(input("Digite a quantidade do produto: "))
+        produto = input("INFORME O NOME DO PRODUTO: ")
+        quantidade = int(input("DIGITE A QUANTIDADE: "))
         estoque[produto] = quantidade
+        print("O PRODUTO FOI ADICIONADO COM SUCESSO!")
     elif opcao == "2":
-        produto = input("Digite o nome do produto: ")
-        quantidade = int(input("Digite a nova quantidade do produto: "))
-        estoque[produto] = quantidade
-    elif opcao == "3":
-        produto = input("Digite o nome do produto: ")
-        if produto in estoque and estoque[produto] > 0:
-            print("O produto está disponível.")
+        produto = input("INFORME O NOME DO PRODUTO: ")
+        quantidade = int(input("DIGITE A NOVA QUANTIDADE: "))
+        if produto in estoque:
+            estoque[produto] = quantidade
+            print("QUANTIDADE ATUALIZADA COM SUCESSO!")
         else:
-            print("O produto nao esta disponível.")
+            print("O PRODUTO SELECIONADO NÃO EXISTE NO ESTOQUE.")
+    elif opcao == "3":
+        produto = input("INFORME O NOME DO PRODUTO: ")
+        if produto in estoque:
+            if estoque[produto] > 0:
+                print("O PRODUTO SELECIONADO ESTÁ NO ESTOQUE.")
+            else:
+                print("O PRODUTO ESTÁ SEM ESTOQUE.")
+        else:
+            print("O PRODUTO NÃO ESTÁ NO ESTOQUE.")
     elif opcao == "4":
+        print("✨OBRIGADO POR ME USAR O  NOSSO SISTEMA!✨")
         break
     else:
-        print("Opção inválida.")
-
-    print("\n")
-
+        print("OPÇÃO INVÁLIDA TENTE NOVAMENTE!")
