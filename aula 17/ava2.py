@@ -15,7 +15,7 @@ while True:
     print("2 - ATUALIZAR A QUANTIDADE DE UM PRODUTO EXISTENTE")
     print("3 - VERFICAR SE UM PRODUTO ESTÁ DISPONIVEL (quantidade maior que 0)")
     print("4 - SAIR")
-    opcao = input("DIGITE A OPÇÃO DESEJADA: ")
+    opcao = input("🛒DIGITE A OPÇÃO DESEJADA: ")
 
     if opcao == "1":
         produto = input("INFORME O NOME DO PRODUTO: ")
