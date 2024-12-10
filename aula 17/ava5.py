@@ -4,26 +4,28 @@
 import json
 
 def calculadora(num1, num2, operacao):
-    if operacao == "+":
-        return num1 + num2
-    elif operacao == "-":
-        return num1 - num2
-    elif operacao == "*":
-        return num1 * num2
-    elif operacao == "/":
-        if num2 == 0:
-            raise ZeroDivisionError("Divisão por zero")
-        return num1 / num2
-    else:
-        raise ValueError("Operação inválida")
+    match operacao:
+        case "+":
+            return num1 + num2
+        case "-":
+            return num1 - num2
+        case "*":
+            return num1 * num2
+        case "/":
+            if num2 == 0:
+                raise ZeroDivisionError("DIVISAO POR ZERO = ERROR O SEU CÉREBRO NÃO SUPORTA ESSA OPERAÇÃO! TENTE NOVAMENTE COM NUMEROS REIAS!🤣🤣")
+            else:
+                return num1 / num2
+        case _:
+            raise ValueError("OPERACAO INVALIDA!💢")
 
 try:
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
-    operacao = input("Digite a operação (+, -, *, /): ")
+    num1 = float(input("DIGITE UM NUMERO: "))
+    num2 = float(input("DIGITE MAIS UM NUMERO: "))
+    operacao = input("DIGITE A OPERAÇÃO MATEMATICA (+, -, *, /): ")
 
     resultado = calculadora(num1, num2, operacao)
-    print("Resultado:", resultado)
+    print("RESULTADO:", resultado)
 
     historico = {
         "num1": num1,
@@ -32,9 +34,10 @@ try:
         "resultado": resultado
     }
 
-    with open("historico.json", "a") as arquivo:
-        json.dump(historico, arquivo)
-        arquivo.write("\n")
+    with open("historico.json", "w") as file:
+        json.dump(historico, file)
 
 except ZeroDivisionError as error:
-    print("Erro:", error)
+    print("ERROR:", error)
+except ValueError as error:
+    print("ERROR:", error)
