@@ -5,13 +5,14 @@
 #Em seguida, escreva um código que:  Peça ao usuário que insira sua idade e use a função classificar_idade para exibir a classificação.
 #
 
+def classificar_idade(idade):
+    if idade < 12:
+        return "🎈CRIANÇA🎈"
+    elif idade >= 12 and idade <= 17:
+        return "🎮ADOLECENTE🎮"
+    else:
+        return "🍺ADULTO🍺"
 
 idade = int(input("DIGITE SUA IDADE: "))
-
-if idade >= 0 and idade < 12:
-    print("CRIANÇA")
-elif idade >= 12 and idade < 17:
-    print("ADOLECENTE")
-elif idade >= 18:
-    print("ADULTO")
-
+classificacao = classificar_idade(idade)
+print("CLASSIFICAÇÃO:", classificacao)
