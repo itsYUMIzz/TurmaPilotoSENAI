@@ -9,9 +9,9 @@
 estoque = {}
 
 while True:
-    print("\nMENU:")
     print("\n✨BEM VINDO AO SISTEMA DE CONTROLE DE ESTOQUE✨")
-    print("1 - ADICIONAR UM NOVO PRODUTO AO ESTOQUE")
+    print("\nMENU:")
+    print("\n1 - ADICIONAR UM NOVO PRODUTO AO ESTOQUE")
     print("2 - ATUALIZAR A QUANTIDADE DE UM PRODUTO EXISTENTE")
     print("3 - VERFICAR SE UM PRODUTO ESTÁ DISPONIVEL (quantidade maior que 0)")
     print("4 - SAIR")
